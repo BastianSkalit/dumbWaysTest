@@ -1,0 +1,16 @@
+--
+--tampilkan semua berita dengan 'user'
+--
+SELECT * FROM `user`
+
+
+--
+--tampilkan berita per user yang membuat
+--
+SELECT `id_news`, `title`, `image`, `deskripsi`, `create_time`, `id_user` FROM `news` WHERE id_user=1
+
+
+--
+--tampilakan berita dengan user yang membuat berita tersebut
+--
+SELECT `title`, `image`, `deskripsi`, `id_user` FROM `news` WHERE id_user=1
